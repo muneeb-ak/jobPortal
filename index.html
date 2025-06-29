@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Job Portal App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Job Portal</h1>
+  </header>
+
+  <main>
+    <!-- Job Form -->
+    <section class="form-section">
+      <h2>Post a Job</h2>
+      <form id="job-form">
+        <input type="text" id="job-title" placeholder="Job Title" required />
+        <input type="text" id="company-name" placeholder="Company" required />
+        <input type="text" id="location" placeholder="Location" required />
+        <select id="job-type" required>
+          <option value="">Select Type</option>
+          <option value="Full-time">Full-time</option>
+          <option value="Part-time">Part-time</option>
+          <option value="Remote">Remote</option>
+        </select>
+        <button type="submit" id="sub">Add Job</button>
+      </form>
+    </section>
+
+    <!-- Filter/Search -->
+    <section class="filter-section">
+      <input type="text" id="search-input" placeholder="Search by title or company..." />
+      <select id="filter-type">
+        <option value="">All Types</option>
+        <option value="Full-time">Full-time</option>
+        <option value="Part-time">Part-time</option>
+        <option value="Remote">Remote</option>
+      </select>
+    </section>
+
+    <!-- Job Listings -->
+    <section id="job-list"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
