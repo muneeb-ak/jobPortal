@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -42,6 +43,7 @@ form button {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 #job-list {
@@ -58,19 +60,4 @@ form button {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-  /* @media only screen and (max-width: 400px){
-  body{
-         background-color : aquamarine;   
-  }
-} */
 
-/* @media not screen and (max-width: 700px){
-  .job-card{
-    background-color: red;
-  }
-} */
-/* @media only screen and (max-width: 400px){
-  .job-card{
-    background-color: red;
-  }
-} */
