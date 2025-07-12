@@ -41,8 +41,9 @@ function addJob() {
   
   localStorage.setItem("jobs", JSON.stringify(jobs));
   
+  alert("🎉 Job added successfully!");
   form.reset();
-
+  
   renderJobs();
 }
 else {
