@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Job Portal App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CareerConnect - Job Portal</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <div class="intro">
+    <div class="overlay"></div>
+    <div class="intro-content">
+      <h1>Welcome to CareerConnect</h1>
+      <p>Your gateway to exciting job opportunities</p>
+      <a href="#main" class="cta-button">Get Started</a>
+    </div>
+  </div>
 
   <header id="header">
-    <h1>Job Portal</h1>
+    <h1>CareerConnect</h1>
   </header>
 
-  <main>
-    <!-- Job Form -->
+  <main id="main">
     <section class="form-section">
       <h2>Post a Job</h2>
       <form id="job-form">
@@ -26,11 +38,10 @@
           <option value="Part-time">Part-time</option>
           <option value="Remote">Remote</option>
         </select>
-        <button type="submit" id="sub">Add Job</button>
+        <button type="button" id="sub">Add Job</button>
       </form>
     </section>
 
-    <!-- Filter/Search -->
     <section class="filter-section">
       <input type="text" id="search-input" placeholder="Search by title or company..." />
       <select id="filter-type">
@@ -41,10 +52,14 @@
       </select>
     </section>
 
-    <!-- Job Listings -->
     <section id="job-list"></section>
   </main>
 
+  <footer>
+    <p>&copy; 2025 CareerConnect. All rights reserved.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
+
 </html>
