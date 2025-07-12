@@ -6,6 +6,8 @@ const addjobBtn = document.querySelector("#sub");
 const jobList = document.querySelector("#job-list");
 const searchInput = document.querySelector("#search-input")
 const sDrop = document.querySelector("#filter-type")
+const form = document.querySelector("#job-form");
+
 
 
 let jobs = JSON.parse(localStorage.getItem("jobs")) || [];
